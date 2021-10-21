@@ -1,0 +1,37 @@
+<%- include('./include/init/header') -%> 
+
+<main class="form-main">
+    <div class="form">
+        <div class="logo-form">
+            <img src="/image/logo.svg" alt="AP">
+            <h1>Login</h1>
+        </div>
+        <form action="/registrar" method="POST">
+            <div class="input">
+                <input type="text" name='nombre1' placeholder="Primer nombre">
+            </div>
+            <div class="input">
+                <input type="text" name='nombre2' placeholder="Segundo nombre">
+            </div>
+            <div class="input">
+                <input type="text" name='apellido' placeholder="Primer Apellido">
+            </div>
+            <div class="input">
+                <input type="text" name='email' placeholder="Correo Electronico">
+            </div>
+            <div class="input">
+                <input type="password" name="pass" placeholder="Password">
+            </div>
+            <div class="input">
+                <input type="password" name="pass" placeholder="Verificar Password">
+            </div>
+            <button type="submit">Send</button>
+            <div class="links">
+                <a href="/help" target="_blank">Haz olvidado tu contraseña?</a>
+                <a href="/registarte" target="_blank" rel="noopener noreferrer">Registrate</a>
+            </div>
+        </form>
+    </div>
+</main>
+
+<%- include('./include/init/footer') -%> 

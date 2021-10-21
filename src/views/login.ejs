@@ -1,0 +1,27 @@
+<%- include('./include/init/header') -%> 
+<div class="logo" id="logo" style="position:fixed; z-index:10;">
+    <img src="/image/logo.svg" alt="AP logo">
+</div>
+<main class="form-main" style="height:100vh;">
+    <div class="form">
+        <div class="logo-form">
+            <img src="/image/logo.svg" alt="AP">
+            <h1>Login</h1>
+        </div>
+        <form action="/login" method="POST">
+            <div class="input">
+                <input type="text" name='usuario' placeholder="User Example">
+            </div>
+            <div class="input">
+                <input type="password" name="pass" placeholder="Password">
+            </div>
+            <button type="submit">Send</button>
+            <div class="links">
+                <a href="/help" target="_blank">Haz olvidado tu contraseña?</a>
+                <a href="/registarte" target="_blank" rel="noopener noreferrer">Registrate</a>
+            </div>
+        </form>
+    </div>
+</main>
+<script src="/js/init.js"></script>
+<%- include('./include/init/footer') -%> 
